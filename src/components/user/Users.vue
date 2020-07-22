@@ -276,7 +276,7 @@ export default {
           }
         )
         if (res.meta.status !== 200) {
-          this.$message.error('修改用户信息失败！')
+          return this.$message.error('修改用户信息失败！')
         }
         this.$message.success('修改用户信息成功！')
         // 隐藏添加用户的对话框
